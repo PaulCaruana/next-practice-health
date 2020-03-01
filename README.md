@@ -86,6 +86,7 @@ Please see sample layouts below:
 - Apply correct UI styling
 - Add robust error handling
 - Tidy up validation logic
+- Group fields like contacts in an array
 - Allow fields to be group and, if required, multiple fields per line
 - Add jest snapshot tests
 - Add new widgets, such as select box
