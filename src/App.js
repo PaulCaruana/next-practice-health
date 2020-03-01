@@ -37,6 +37,10 @@ function App() {
             "guardian": {
                 "title": "Guardian",
                 "type": "string"
+            },
+            "guardianContact": {
+                "title": "Contact mob.",
+                "type": "string"
             }
         }
     };
@@ -70,7 +74,10 @@ function App() {
                     "containsASpace" : true
                 },
                 "defaultErrorMsg" : "Guardian name must contain a space"
-            }
+            },
+            guardianContact: {
+                "when" : "guardianConsent"
+            },
         }
     }
 
