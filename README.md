@@ -81,7 +81,16 @@ Please see sample layouts below:
         }
     } 
 ```
+## Todo
 
+- Apply correct UI styling
+- Add robust error handling
+- Tidy up validation logic
+- Allow fields to be group and, if required, multiple fields per line
+- Add jest snapshot tests
+- Add new widgets, such as select box
+- See if the useForm NPM package (which is excellent) can have a better and consistent validation method. For example, custom validation don't permit an associated message.
+ 
 ## Prerequisites
 
 Please ensure that the latest version of NPM and NodeJs are installed 
@@ -102,7 +111,6 @@ npm start
 ```
 npm run test
 ```
-
 
 ## Author
 

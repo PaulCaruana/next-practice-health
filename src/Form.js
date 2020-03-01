@@ -7,6 +7,7 @@ import "./index.css";
 function Form(props) {
     const {form, schema} = props;
     const fields = form.fields;
+    const formTitle = form.title;
     const properties = schema.properties;
     const {register, handleSubmit, setValue, watch, errors} = useForm();
     const onSubmit = data => {
@@ -20,8 +21,15 @@ function Form(props) {
     return (
         <div className="App">
             <form onSubmit={handleSubmit(onSubmit)}>
+                <h1>{formTitle}</h1>
                 <div>
-                    <Fields fields={fields} properties={properties} watch={watch} onChange={handleChange} errors={errors} register={register}/>
+                    <Fields
+                        fields={fields}
+                        properties={properties}
+                        watch={watch}
+                        onChange={handleChange}
+                        errors={errors}
+                        register={register}/>
                 </div>
                 <button type="submit">Submit</button>
             </form>
